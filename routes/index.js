@@ -7,15 +7,15 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/about', (req, res, next) => {
-  res.render('index', { title: 'About' });
+  res.render('index', { title: 'About Me' });
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('index', { title: 'Contact' });
+  res.render('index', { title: 'Contact Me' });
 });
 
-router.get('/products', (req, res, next) => {
-  res.render('index', { title: 'Products' });
+router.get('/projects', (req, res, next) => {
+  res.render('index', { title: 'Projects' });
 });
 
 router.get('/services', (req, res, next) => {
