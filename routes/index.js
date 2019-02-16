@@ -11,11 +11,11 @@ router.get('/about', (req, res, next) => {
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('index', { title: 'Contact Me' });
+  res.render('../views/contact/index', { title: 'Contact Me' });
 });
 
 router.get('/projects', (req, res, next) => {
-  res.render('index', { title: 'Projects' });
+  res.render('../views/projects/index', { title: 'Projects' });
 });
 
 router.get('/services', (req, res, next) => {
