@@ -3,11 +3,11 @@ let router = express.Router();
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Home' });
+  res.render('../views/home/index', { title: 'Home' });
 });
 
 router.get('/about', (req, res, next) => {
-  res.render('index', { title: 'About Me' });
+  res.render('../views/aboutme/index', { title: 'About Me' });
 });
 
 router.get('/contact', (req, res, next) => {
@@ -19,7 +19,7 @@ router.get('/projects', (req, res, next) => {
 });
 
 router.get('/services', (req, res, next) => {
-  res.render('index', { title: 'Services' });
+  res.render('../views/services/index', { title: 'Services' });
 });
 
 module.exports = router;

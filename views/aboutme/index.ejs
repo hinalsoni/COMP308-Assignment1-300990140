@@ -1,0 +1,29 @@
+<% include ../partials/header.ejs %>
+
+  <!-- Content goes here --> 
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4"><%= title %></h1>
+      <% if(title == "About Me") { %>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="/images/hinal.jpg" alt="..." width = "300px" height="300px" class="rounded-circle">
+            </div>
+          <div class="col">
+              Hi,<br/>
+              My name is Hinal Soni. Currently, I am enrolled in Software Engineering Technology Advanced Diploma Program at Centennial College. I graduated with a bachelor’s degree in Information Technology.
+              <br/><br/>
+              I worked as a JAVA developer intern, which provided me an opportunity to gain and enhanced my technical skills in various area of JAVA and MySQL database System. During the internship I worked with the multiple tasks at the same time which made me able to work in a fast-paced environment
+          </div>
+        </div>
+            
+      <% } %>
+
+      
+    </div>
+  </div>
+
+<% include ../partials/footer.ejs %>
