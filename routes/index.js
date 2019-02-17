@@ -22,4 +22,7 @@ router.get('/services', (req, res, next) => {
   res.render('../views/services/index', { title: 'Services' });
 });
 
+router.get('/contactme', function(req, res, next) {
+  res.render('../views/contact/add', { title: 'Fill your details to contact me' });
+});
 module.exports = router;
